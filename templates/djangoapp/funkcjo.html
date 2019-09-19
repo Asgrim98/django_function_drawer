@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+{%load staticfiles%}
+<html>
+
+<head>
+	<title>Django app</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/funkcjo.css"%}">
+	<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+</head>
+
+
+<body>
+
+	<main>
+		<header>
+			<h1>Witaj w aplikacji rysujacej wykres funkcji</h1>
+		</header>
+
+		<div class="fish" id="fish"></div>
+		<div class="fish" id="fish2"></div>
+
+		<form class="forma" action="{% url 'funkcjo' %}">
+			<div class="" >
+				<label for="" lang="latex">X^3</label> <textarea name="x3" rows="1" cols="2">0</textarea>
+			</div>
+			<div class="">
+				<label for="" lang="latex">X^2</label> <textarea name="x2" rows="1" cols="2">0</textarea>
+			</div>
+			<div class="">
+				<label for="" lang="latex">X</label> <textarea name="x" rows="1" cols="2">0</textarea>
+			</div>
+			<div class="">
+				<label for="" lang="latex">Wyraz  wolny</label> <textarea name="wolny" rows="1" cols="2">0</textarea>
+			</div>
+
+
+			<br>
+			<input class="button" type="submit" value="RYSUJ FUNKCJO!">
+		</form>
+
+		<div class="zdjecie">
+			<img src="{% static "images/wykres.jpg"%}" alt="Tu będzie wykrses">
+		</div>
+	</main>
+
+
+
+</body>
+
+</html>

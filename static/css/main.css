@@ -1,0 +1,24 @@
+.main_section{
+
+
+	display: flex;
+}
+
+header{
+
+	margin: auto;
+	text-align: center;
+}
+
+body{
+
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+article{
+	padding: 3rem;
+	text-align: justify;
+	margin: 2px;
+	background-color: pink;
+}
